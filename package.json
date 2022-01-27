@@ -1,0 +1,23 @@
+{
+  "name": "ascension-2022",
+  "version": "0.0.1",
+  "description": "The official Ascension bot for discord",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ascension-Discord/2022.git"
+  },
+  "author": "Nolant108",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ascension-Discord/2022/issues"
+  },
+  "homepage": "https://github.com/Ascension-Discord/2022#readme",
+  "dependencies": {
+    "discord.js": "^13.6.0",
+    "fs": "^0.0.1-security"
+  }
+}

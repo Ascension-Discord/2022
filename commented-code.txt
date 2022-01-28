@@ -1,0 +1,48 @@
+ /*
+        axios
+        .get('https://v2.jokeapi.dev/joke/Any?format=txt')
+        .then((res) => {
+
+            console.log(axios);
+
+        })
+        
+
+        
+
+        
+    
+        JokeAPI.getJokes()
+        .then((res) => res.json())
+        .then((data) => {
+          console.log(data)
+
+            message.channel.send(`Here is your joke! \n\n ${data} \n\n ${data}`);
+
+
+        });
+
+        
+        */
+
+
+
+
+
+
+        /*
+        
+        let getJoke = async () => {
+                let result = await fetch
+                    ("https://v2.jokeapi.dev/joke/Any");
+                let json = await result.json();
+            };
+
+            let joke = getJoke();
+
+
+            message.channel.send(`Heres your joke: 
+            \n\n ${joke.setup}
+            \n\n ${joke.delivery}`);
+    
+    */

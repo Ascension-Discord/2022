@@ -32,7 +32,8 @@ client.on('ready', () => {
     console.log(`Logged in as ${client.user.tag}`)
 
     client.user.setStatus('online')
-    client.user.setActivity('Launching into space!', {
+    client.user.setActivity( {
+        name: '!help | Launching to Space with you!',
         type: "STREAMING",
         url: "https://www.twitch.tv/lofigurl"
     
@@ -61,8 +62,26 @@ client.on('messageCreate', message =>{
     if(command === 'ping'){
         client.commands.get('ping').execute(message, args);
     } 
+     
+    if(command === 'help'){
+        client.commands.get('help').execute(message, args);
+    } 
 
+    if(command === 'joke'){
+        client.commands.get('joke').execute(message, args);
+    } 
 
+    if(command === 'clear'){
+        client.commands.get('clear').execute(message, args);
+    } 
+
+    if(command === 'dog'){
+        client.commands.get('dog').execute(message, args);
+    } 
+
+    if(command === 'cat'){
+        client.commands.get('cat').execute(message, args);
+    } 
 });
 
 //Bot Login

@@ -17,7 +17,11 @@
   },
   "homepage": "https://github.com/Ascension-Discord/2022#readme",
   "dependencies": {
+    "axios": "^0.25.0",
+    "clear-chat": "^1.0.9",
+    "discord-jokes": "^4.0.0",
     "discord.js": "^13.6.0",
-    "fs": "^0.0.1-security"
+    "fs": "^0.0.1-security",
+    "sv443-joke-api": "^0.1.0"
   }
 }

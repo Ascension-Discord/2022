@@ -1,3 +1,4 @@
+require('discord-reply');
 const Discord = require('discord.js');
 const { MessageEmbed, commands } = require('discord.js');
 const fs = require('fs');
@@ -81,6 +82,11 @@ client.on('messageCreate', message =>{
 
     if(command === 'cat'){
         client.commands.get('cat').execute(message, args);
+    } 
+
+    
+    if(command === 'about'){
+        client.commands.get('about').execute(message, args);
     } 
 });
 

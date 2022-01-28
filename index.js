@@ -5,7 +5,7 @@ const fs = require('fs');
 const { fileURLToPath } = require('url');
 
 //TODO REMOVE!! when going to prod
-const TOKEN = 'OTM2MzA2ODczMzc4OTU1MzA1.YfLRug.7xr1YwVavlQg7NqLGWUDrjsMtmg';
+const TOKEN = '';
 
 //The current bot prefix (01/27/22)
 const prefix = '!';

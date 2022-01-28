@@ -1,10 +1,11 @@
+require('discord-reply');
 const Discord = require('discord.js');
 const { MessageEmbed, commands } = require('discord.js');
 const fs = require('fs');
 const { fileURLToPath } = require('url');
 
 //TODO REMOVE!! when going to prod
-const TOKEN = '';
+const TOKEN = 'OTM2MzA2ODczMzc4OTU1MzA1.YfLRug.7xr1YwVavlQg7NqLGWUDrjsMtmg';
 
 //The current bot prefix (01/27/22)
 const prefix = '!';
@@ -81,6 +82,11 @@ client.on('messageCreate', message =>{
 
     if(command === 'cat'){
         client.commands.get('cat').execute(message, args);
+    } 
+
+    
+    if(command === 'about'){
+        client.commands.get('about').execute(message, args);
     } 
 });
 

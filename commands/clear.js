@@ -15,7 +15,7 @@ module.exports = {
 			.addField("Chat History Code", chat.code, true)
 		message.channel.send(embed);
 		await message.delete();
-        message.channel.send(`Your chats hve been deleted ${member.user.username}`);
+        message.reply(`Your chats hve been deleted ${member.user.username}`);
 
     }
 };

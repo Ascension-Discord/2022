@@ -10,7 +10,7 @@ module.exports =  {
 
 
         giveMeAJoke.getRandomDadJoke(function(joke) {
-            message.channel.send(joke);
+            message.reply(`Here is your joke! \n\n` + joke);
           });
     
     

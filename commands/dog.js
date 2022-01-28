@@ -13,7 +13,7 @@ module.exports = {
         .get('https://api.thedogapi.com/v1/images/search')
         .then((res) => {
 
-            message.channel.send(res.data[0].url)
+            message.reply(res.data[0].url)
 
         })
  }

@@ -23,6 +23,7 @@
     "discord-reply": "^0.1.2",
     "discord.js": "^13.6.0",
     "fs": "^0.0.1-security",
+    "furry-wrapper": "^0.0.5",
     "sv443-joke-api": "^0.1.0"
   }
 }

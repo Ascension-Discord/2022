@@ -5,7 +5,7 @@ const fs = require('fs');
 const { fileURLToPath } = require('url');
 
 //TODO REMOVE!! when going to prod
-const TOKEN = '';
+const TOKEN = 'OTM2MzA2ODczMzc4OTU1MzA1.YfLRug.05Cvezl3GfqqlqnikXh7LJUQQns';
 
 //The current bot prefix (01/27/22)
 const prefix = '!';
@@ -84,10 +84,13 @@ client.on('messageCreate', message =>{
         client.commands.get('cat').execute(message, args);
     } 
 
-    
     if(command === 'about'){
         client.commands.get('about').execute(message, args);
     } 
+
+    if(command === 'furry'){
+        client.commands.get('furry').execute(message, args);
+    }
 });
 
 //Bot Login

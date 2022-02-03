@@ -3,12 +3,10 @@ const Discord = require('discord.js');
 const { MessageEmbed, commands } = require('discord.js');
 const fs = require('fs');
 const { fileURLToPath } = require('url');
+const config = require("./config.json");
 
 //TODO REMOVE!! when going to prod
-const TOKEN = 'OTM2MzA2ODczMzc4OTU1MzA1.YfLRug.Z4KNtdXaRSg7TKgcEi-OoBRaUuA';
-
 //The current bot prefix (01/27/22)
-const prefix = '!';
 
 //Intents
 const client = new Discord.Client({
@@ -55,9 +53,9 @@ for(const file of commandFiles){
 
 //CMD Handler & Runner 
 client.on('messageCreate', message =>{
-    if(!message.content.startsWith(prefix) || message.author.bot) return;
+    if(!message.content.startsWith(config.prefix) || message.author.bot) return;
  
-    const args = message.content.slice(prefix.length).split(/ +/);
+    const args = message.content.slice(config.prefix.length).split(/ +/);
     const command = args.shift().toLowerCase();
  
     if(command === 'ping'){
@@ -91,7 +89,11 @@ client.on('messageCreate', message =>{
     if(command === 'furry'){
         client.commands.get('furry').execute(message, args);
     }
+
+    if(command === 'ytt'){
+        client.commands.get('ytt').execute(message, args);
+    }
 });
 
 //Bot Login
-client.login(TOKEN);
+client.login(config.token);

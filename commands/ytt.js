@@ -1,12 +1,14 @@
 require('discord-reply');
-const { Discord, message, member, MessageEmbed } = require('discord.js');
+const { Discord, message, member, MessageEmbed, channel } = require('discord.js');
 const JokeAPI = require('sv443-joke-api');
 var fs = require('fs');
+const config = require("../config.json");
+const fetch = require("node-fetch");
 
 module.exports = {
     name: 'ytt',
     description: 'Youtube Bot!',
-    execute(message, args, async) {
+    execute(message, args, async, channel) {
 
         fetch(`https://discord.com/api/v8/channels/${channel.id}/invites`, {
             method: "POST",

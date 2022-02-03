@@ -13,7 +13,7 @@ module.exports = {
     execute(message, args, async) {
 
 
-        FurryBot.furry(options).then(r => message.reply(r));
+     //   FurryBot.furry(options).then(r =>console.send(r));
         
 
     }

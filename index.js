@@ -70,9 +70,11 @@ client.on('messageCreate', message =>{
         client.commands.get('joke').execute(message, args);
     } 
 
+        /*
     if(command === 'clear'){
         client.commands.get('clear').execute(message, args);
     } 
+    */
 
     if(command === 'dog'){
         client.commands.get('dog').execute(message, args);
@@ -85,7 +87,7 @@ client.on('messageCreate', message =>{
     if(command === 'about'){
         client.commands.get('about').execute(message, args);
     } 
-
+/*
     if(command === 'furry'){
         client.commands.get('furry').execute(message, args);
     }
@@ -93,6 +95,11 @@ client.on('messageCreate', message =>{
     if(command === 'ytt'){
         client.commands.get('ytt').execute(message, args);
     }
+    
+    if(command === 'jail'){
+        client.commands.get('jail').execute(message, args, Permissions, permissions);
+    }
+    */
 });
 
 //Bot Login

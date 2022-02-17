@@ -72,9 +72,11 @@ client.on('messageCreate', message =>{
         client.commands.get('joke').execute(message, args);
     } 
 
+    /*
     if(command === 'clear'){
         client.commands.get('clear').execute(message, args);
     } 
+    */
 
     if(command === 'dog'){
         client.commands.get('dog').execute(message, args);
